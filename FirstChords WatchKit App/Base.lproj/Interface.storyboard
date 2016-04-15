@@ -41,12 +41,26 @@
             <objects>
                 <controller id="jeW-ze-uY3" customClass="BowieInterfaceController" customModule="FirstChords_WatchKit_Extension">
                     <items>
-                        <button width="1" alignment="left" title="Button" id="2CU-oX-qFh">
-                            <connections>
-                                <action selector="go" destination="jeW-ze-uY3" id="C0G-A2-53R"/>
-                            </connections>
-                        </button>
+                        <timer width="1" height="23.5" alignment="center" textAlignment="center" enabled="YES" id="y1H-d3-mdC">
+                            <calendarUnit key="units" minute="YES" second="YES"/>
+                        </timer>
+                        <separator alignment="left" id="fpK-JF-0gy"/>
+                        <label width="115.5" height="88.5" alignment="center" verticalAlignment="center" text="?" textAlignment="center" minimumScaleFactor="0.10000000000000001" id="FD0-da-kbi">
+                            <fontDescription key="font" type="system" pointSize="52"/>
+                        </label>
+                        <separator alignment="left" verticalAlignment="bottom" id="O7d-Li-5cO"/>
+                        <group width="134" alignment="center" verticalAlignment="bottom" id="rcy-Xk-Rq5">
+                            <items>
+                                <label width="94.5" alignment="left" verticalAlignment="bottom" text="Next: ?" id="d6m-AT-AUd"/>
+                                <label alignment="right" verticalAlignment="bottom" text="-" id="J5y-l0-yNG"/>
+                            </items>
+                        </group>
                     </items>
+                    <connections>
+                        <outlet property="beatCounter" destination="J5y-l0-yNG" id="rJU-kj-lWT"/>
+                        <outlet property="chordDisplay" destination="FD0-da-kbi" id="XkF-9t-Qdi"/>
+                        <outlet property="nextChordDisplay" destination="d6m-AT-AUd" id="KAr-S2-pvc"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="525" y="328"/>
