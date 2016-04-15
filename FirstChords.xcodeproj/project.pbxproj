@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACE1573C1CC0ECA900D2A4DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1573B1CC0ECA900D2A4DB /* AppDelegate.swift */; };
+		ACE1573E1CC0ECA900D2A4DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1573D1CC0ECA900D2A4DB /* ViewController.swift */; };
+		ACE157411CC0ECA900D2A4DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE1573F1CC0ECA900D2A4DB /* Main.storyboard */; };
+		ACE157431CC0ECA900D2A4DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE157421CC0ECA900D2A4DB /* Assets.xcassets */; };
+		ACE157461CC0ECA900D2A4DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE157441CC0ECA900D2A4DB /* LaunchScreen.storyboard */; };
+		ACE157511CC0ECA900D2A4DB /* FirstChordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE157501CC0ECA900D2A4DB /* FirstChordsTests.swift */; };
+		ACE1575C1CC0ECA900D2A4DB /* FirstChordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1575B1CC0ECA900D2A4DB /* FirstChordsUITests.swift */; };
+		ACE157611CC0ECA900D2A4DB /* FirstChords WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ACE157601CC0ECA900D2A4DB /* FirstChords WatchKit App.app */; };
+		ACE157671CC0ECA900D2A4DB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE157651CC0ECA900D2A4DB /* Interface.storyboard */; };
+		ACE157691CC0ECA900D2A4DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE157681CC0ECA900D2A4DB /* Assets.xcassets */; };
+		ACE157701CC0ECA900D2A4DB /* FirstChords WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACE1576F1CC0ECA900D2A4DB /* FirstChords WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ACE157771CC0ECAA00D2A4DB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE157761CC0ECAA00D2A4DB /* InterfaceController.swift */; };
+		ACE157791CC0ECAA00D2A4DB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE157781CC0ECAA00D2A4DB /* ExtensionDelegate.swift */; };
+		ACE1577B1CC0ECAA00D2A4DB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1577A1CC0ECAA00D2A4DB /* NotificationController.swift */; };
+		ACE1577D1CC0ECAA00D2A4DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE1577C1CC0ECAA00D2A4DB /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACE1574D1CC0ECA900D2A4DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACE157301CC0ECA900D2A4DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACE157371CC0ECA900D2A4DB;
+			remoteInfo = FirstChords;
+		};
+		ACE157581CC0ECA900D2A4DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACE157301CC0ECA900D2A4DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACE157371CC0ECA900D2A4DB;
+			remoteInfo = FirstChords;
+		};
+		ACE157621CC0ECA900D2A4DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACE157301CC0ECA900D2A4DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACE1575F1CC0ECA900D2A4DB;
+			remoteInfo = "FirstChords WatchKit App";
+		};
+		ACE157711CC0ECA900D2A4DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACE157301CC0ECA900D2A4DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACE1576E1CC0ECA900D2A4DB;
+			remoteInfo = "FirstChords WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ACE157841CC0ECAA00D2A4DB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ACE157701CC0ECA900D2A4DB /* FirstChords WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE157881CC0ECAA00D2A4DB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				ACE157611CC0ECA900D2A4DB /* FirstChords WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		ACE157381CC0ECA900D2A4DB /* FirstChords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstChords.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE1573B1CC0ECA900D2A4DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACE1573D1CC0ECA900D2A4DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACE157401CC0ECA900D2A4DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACE157421CC0ECA900D2A4DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACE157451CC0ECA900D2A4DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACE157471CC0ECA900D2A4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE1574C1CC0ECA900D2A4DB /* FirstChordsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstChordsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE157501CC0ECA900D2A4DB /* FirstChordsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChordsTests.swift; sourceTree = "<group>"; };
+		ACE157521CC0ECA900D2A4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE157571CC0ECA900D2A4DB /* FirstChordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstChordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE1575B1CC0ECA900D2A4DB /* FirstChordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstChordsUITests.swift; sourceTree = "<group>"; };
+		ACE1575D1CC0ECA900D2A4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE157601CC0ECA900D2A4DB /* FirstChords WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FirstChords WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE157661CC0ECA900D2A4DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		ACE157681CC0ECA900D2A4DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACE1576A1CC0ECA900D2A4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE1576F1CC0ECA900D2A4DB /* FirstChords WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FirstChords WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE157751CC0ECAA00D2A4DB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		ACE157761CC0ECAA00D2A4DB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		ACE157781CC0ECAA00D2A4DB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		ACE1577A1CC0ECAA00D2A4DB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		ACE1577C1CC0ECAA00D2A4DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACE1577E1CC0ECAA00D2A4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACE157351CC0ECA900D2A4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE157491CC0ECA900D2A4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE157541CC0ECA900D2A4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE1576C1CC0ECA900D2A4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACE1572F1CC0ECA900D2A4DB = {
+			isa = PBXGroup;
+			children = (
+				ACE1573A1CC0ECA900D2A4DB /* FirstChords */,
+				ACE1574F1CC0ECA900D2A4DB /* FirstChordsTests */,
+				ACE1575A1CC0ECA900D2A4DB /* FirstChordsUITests */,
+				ACE157641CC0ECA900D2A4DB /* FirstChords WatchKit App */,
+				ACE157731CC0ECA900D2A4DB /* FirstChords WatchKit Extension */,
+				ACE157391CC0ECA900D2A4DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACE157391CC0ECA900D2A4DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACE157381CC0ECA900D2A4DB /* FirstChords.app */,
+				ACE1574C1CC0ECA900D2A4DB /* FirstChordsTests.xctest */,
+				ACE157571CC0ECA900D2A4DB /* FirstChordsUITests.xctest */,
+				ACE157601CC0ECA900D2A4DB /* FirstChords WatchKit App.app */,
+				ACE1576F1CC0ECA900D2A4DB /* FirstChords WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACE1573A1CC0ECA900D2A4DB /* FirstChords */ = {
+			isa = PBXGroup;
+			children = (
+				ACE1573B1CC0ECA900D2A4DB /* AppDelegate.swift */,
+				ACE1573D1CC0ECA900D2A4DB /* ViewController.swift */,
+				ACE1573F1CC0ECA900D2A4DB /* Main.storyboard */,
+				ACE157421CC0ECA900D2A4DB /* Assets.xcassets */,
+				ACE157441CC0ECA900D2A4DB /* LaunchScreen.storyboard */,
+				ACE157471CC0ECA900D2A4DB /* Info.plist */,
+			);
+			path = FirstChords;
+			sourceTree = "<group>";
+		};
+		ACE1574F1CC0ECA900D2A4DB /* FirstChordsTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACE157501CC0ECA900D2A4DB /* FirstChordsTests.swift */,
+				ACE157521CC0ECA900D2A4DB /* Info.plist */,
+			);
+			path = FirstChordsTests;
+			sourceTree = "<group>";
+		};
+		ACE1575A1CC0ECA900D2A4DB /* FirstChordsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACE1575B1CC0ECA900D2A4DB /* FirstChordsUITests.swift */,
+				ACE1575D1CC0ECA900D2A4DB /* Info.plist */,
+			);
+			path = FirstChordsUITests;
+			sourceTree = "<group>";
+		};
+		ACE157641CC0ECA900D2A4DB /* FirstChords WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				ACE157651CC0ECA900D2A4DB /* Interface.storyboard */,
+				ACE157681CC0ECA900D2A4DB /* Assets.xcassets */,
+				ACE1576A1CC0ECA900D2A4DB /* Info.plist */,
+			);
+			path = "FirstChords WatchKit App";
+			sourceTree = "<group>";
+		};
+		ACE157731CC0ECA900D2A4DB /* FirstChords WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ACE157761CC0ECAA00D2A4DB /* InterfaceController.swift */,
+				ACE157781CC0ECAA00D2A4DB /* ExtensionDelegate.swift */,
+				ACE1577A1CC0ECAA00D2A4DB /* NotificationController.swift */,
+				ACE1577C1CC0ECAA00D2A4DB /* Assets.xcassets */,
+				ACE1577E1CC0ECAA00D2A4DB /* Info.plist */,
+				ACE157741CC0ECA900D2A4DB /* Supporting Files */,
+			);
+			path = "FirstChords WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		ACE157741CC0ECA900D2A4DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACE157751CC0ECAA00D2A4DB /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACE157371CC0ECA900D2A4DB /* FirstChords */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE157891CC0ECAA00D2A4DB /* Build configuration list for PBXNativeTarget "FirstChords" */;
+			buildPhases = (
+				ACE157341CC0ECA900D2A4DB /* Sources */,
+				ACE157351CC0ECA900D2A4DB /* Frameworks */,
+				ACE157361CC0ECA900D2A4DB /* Resources */,
+				ACE157881CC0ECAA00D2A4DB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACE157631CC0ECA900D2A4DB /* PBXTargetDependency */,
+			);
+			name = FirstChords;
+			productName = FirstChords;
+			productReference = ACE157381CC0ECA900D2A4DB /* FirstChords.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACE1574B1CC0ECA900D2A4DB /* FirstChordsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE1578C1CC0ECAA00D2A4DB /* Build configuration list for PBXNativeTarget "FirstChordsTests" */;
+			buildPhases = (
+				ACE157481CC0ECA900D2A4DB /* Sources */,
+				ACE157491CC0ECA900D2A4DB /* Frameworks */,
+				ACE1574A1CC0ECA900D2A4DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACE1574E1CC0ECA900D2A4DB /* PBXTargetDependency */,
+			);
+			name = FirstChordsTests;
+			productName = FirstChordsTests;
+			productReference = ACE1574C1CC0ECA900D2A4DB /* FirstChordsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACE157561CC0ECA900D2A4DB /* FirstChordsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE1578F1CC0ECAA00D2A4DB /* Build configuration list for PBXNativeTarget "FirstChordsUITests" */;
+			buildPhases = (
+				ACE157531CC0ECA900D2A4DB /* Sources */,
+				ACE157541CC0ECA900D2A4DB /* Frameworks */,
+				ACE157551CC0ECA900D2A4DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACE157591CC0ECA900D2A4DB /* PBXTargetDependency */,
+			);
+			name = FirstChordsUITests;
+			productName = FirstChordsUITests;
+			productReference = ACE157571CC0ECA900D2A4DB /* FirstChordsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		ACE1575F1CC0ECA900D2A4DB /* FirstChords WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE157851CC0ECAA00D2A4DB /* Build configuration list for PBXNativeTarget "FirstChords WatchKit App" */;
+			buildPhases = (
+				ACE1575E1CC0ECA900D2A4DB /* Resources */,
+				ACE157841CC0ECAA00D2A4DB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACE157721CC0ECA900D2A4DB /* PBXTargetDependency */,
+			);
+			name = "FirstChords WatchKit App";
+			productName = "FirstChords WatchKit App";
+			productReference = ACE157601CC0ECA900D2A4DB /* FirstChords WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		ACE1576E1CC0ECA900D2A4DB /* FirstChords WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE157811CC0ECAA00D2A4DB /* Build configuration list for PBXNativeTarget "FirstChords WatchKit Extension" */;
+			buildPhases = (
+				ACE1576B1CC0ECA900D2A4DB /* Sources */,
+				ACE1576C1CC0ECA900D2A4DB /* Frameworks */,
+				ACE1576D1CC0ECA900D2A4DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FirstChords WatchKit Extension";
+			productName = "FirstChords WatchKit Extension";
+			productReference = ACE1576F1CC0ECA900D2A4DB /* FirstChords WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACE157301CC0ECA900D2A4DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Davidson, Andrew (ELS)";
+				TargetAttributes = {
+					ACE157371CC0ECA900D2A4DB = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					ACE1574B1CC0ECA900D2A4DB = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = ACE157371CC0ECA900D2A4DB;
+					};
+					ACE157561CC0ECA900D2A4DB = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = ACE157371CC0ECA900D2A4DB;
+					};
+					ACE1575F1CC0ECA900D2A4DB = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					ACE1576E1CC0ECA900D2A4DB = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = ACE157331CC0ECA900D2A4DB /* Build configuration list for PBXProject "FirstChords" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACE1572F1CC0ECA900D2A4DB;
+			productRefGroup = ACE157391CC0ECA900D2A4DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACE157371CC0ECA900D2A4DB /* FirstChords */,
+				ACE1574B1CC0ECA900D2A4DB /* FirstChordsTests */,
+				ACE157561CC0ECA900D2A4DB /* FirstChordsUITests */,
+				ACE1575F1CC0ECA900D2A4DB /* FirstChords WatchKit App */,
+				ACE1576E1CC0ECA900D2A4DB /* FirstChords WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACE157361CC0ECA900D2A4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE157461CC0ECA900D2A4DB /* LaunchScreen.storyboard in Resources */,
+				ACE157431CC0ECA900D2A4DB /* Assets.xcassets in Resources */,
+				ACE157411CC0ECA900D2A4DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE1574A1CC0ECA900D2A4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE157551CC0ECA900D2A4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE1575E1CC0ECA900D2A4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE157691CC0ECA900D2A4DB /* Assets.xcassets in Resources */,
+				ACE157671CC0ECA900D2A4DB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE1576D1CC0ECA900D2A4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE1577D1CC0ECAA00D2A4DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACE157341CC0ECA900D2A4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE1573E1CC0ECA900D2A4DB /* ViewController.swift in Sources */,
+				ACE1573C1CC0ECA900D2A4DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE157481CC0ECA900D2A4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE157511CC0ECA900D2A4DB /* FirstChordsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE157531CC0ECA900D2A4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE1575C1CC0ECA900D2A4DB /* FirstChordsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE1576B1CC0ECA900D2A4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE1577B1CC0ECAA00D2A4DB /* NotificationController.swift in Sources */,
+				ACE157791CC0ECAA00D2A4DB /* ExtensionDelegate.swift in Sources */,
+				ACE157771CC0ECAA00D2A4DB /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACE1574E1CC0ECA900D2A4DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACE157371CC0ECA900D2A4DB /* FirstChords */;
+			targetProxy = ACE1574D1CC0ECA900D2A4DB /* PBXContainerItemProxy */;
+		};
+		ACE157591CC0ECA900D2A4DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACE157371CC0ECA900D2A4DB /* FirstChords */;
+			targetProxy = ACE157581CC0ECA900D2A4DB /* PBXContainerItemProxy */;
+		};
+		ACE157631CC0ECA900D2A4DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACE1575F1CC0ECA900D2A4DB /* FirstChords WatchKit App */;
+			targetProxy = ACE157621CC0ECA900D2A4DB /* PBXContainerItemProxy */;
+		};
+		ACE157721CC0ECA900D2A4DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACE1576E1CC0ECA900D2A4DB /* FirstChords WatchKit Extension */;
+			targetProxy = ACE157711CC0ECA900D2A4DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACE1573F1CC0ECA900D2A4DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACE157401CC0ECA900D2A4DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACE157441CC0ECA900D2A4DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACE157451CC0ECA900D2A4DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ACE157651CC0ECA900D2A4DB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACE157661CC0ECA900D2A4DB /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACE1577F1CC0ECAA00D2A4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACE157801CC0ECAA00D2A4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACE157821CC0ECAA00D2A4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "FirstChords WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.adav.FirstChords.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		ACE157831CC0ECAA00D2A4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "FirstChords WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.adav.FirstChords.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		ACE157861CC0ECAA00D2A4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = FirstChords_WatchKit_Extension;
+				INFOPLIST_FILE = "FirstChords WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = me.adav.FirstChords.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		ACE157871CC0ECAA00D2A4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = FirstChords_WatchKit_Extension;
+				INFOPLIST_FILE = "FirstChords WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = me.adav.FirstChords.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		ACE1578A1CC0ECAA00D2A4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FirstChords/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.adav.FirstChords;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ACE1578B1CC0ECAA00D2A4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FirstChords/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.adav.FirstChords;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ACE1578D1CC0ECAA00D2A4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FirstChordsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.adav.FirstChordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstChords.app/FirstChords";
+			};
+			name = Debug;
+		};
+		ACE1578E1CC0ECAA00D2A4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FirstChordsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.adav.FirstChordsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirstChords.app/FirstChords";
+			};
+			name = Release;
+		};
+		ACE157901CC0ECAA00D2A4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FirstChordsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.adav.FirstChordsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FirstChords;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		ACE157911CC0ECAA00D2A4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FirstChordsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.adav.FirstChordsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FirstChords;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACE157331CC0ECA900D2A4DB /* Build configuration list for PBXProject "FirstChords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE1577F1CC0ECAA00D2A4DB /* Debug */,
+				ACE157801CC0ECAA00D2A4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACE157811CC0ECAA00D2A4DB /* Build configuration list for PBXNativeTarget "FirstChords WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE157821CC0ECAA00D2A4DB /* Debug */,
+				ACE157831CC0ECAA00D2A4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACE157851CC0ECAA00D2A4DB /* Build configuration list for PBXNativeTarget "FirstChords WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE157861CC0ECAA00D2A4DB /* Debug */,
+				ACE157871CC0ECAA00D2A4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACE157891CC0ECAA00D2A4DB /* Build configuration list for PBXNativeTarget "FirstChords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE1578A1CC0ECAA00D2A4DB /* Debug */,
+				ACE1578B1CC0ECAA00D2A4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACE1578C1CC0ECAA00D2A4DB /* Build configuration list for PBXNativeTarget "FirstChordsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE1578D1CC0ECAA00D2A4DB /* Debug */,
+				ACE1578E1CC0ECAA00D2A4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACE1578F1CC0ECAA00D2A4DB /* Build configuration list for PBXNativeTarget "FirstChordsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE157901CC0ECAA00D2A4DB /* Debug */,
+				ACE157911CC0ECAA00D2A4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACE157301CC0ECA900D2A4DB /* Project object */;
+}
