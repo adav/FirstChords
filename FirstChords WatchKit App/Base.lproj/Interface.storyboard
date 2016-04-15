@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VcM-hA-IYs">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
+        <!--Chords Interface Controller-->
+        <scene sceneID="EMa-gT-yWu">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="220" y="345"/>
-        </scene>
-        <!--Static Notification Interface Controller-->
-        <scene sceneID="AEw-b0-oYE">
-            <objects>
-                <notificationController id="YCC-NB-fut">
+                <controller id="VcM-hA-IYs" customClass="ChordsInterfaceController" customModule="FirstChords_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <group width="1" height="98.5" alignment="left" layout="vertical" id="0Sg-wf-HMm">
+                            <items>
+                                <label width="1" height="55.5" alignment="left" text="5" textAlignment="center" id="l4v-MO-Y1N">
+                                    <fontDescription key="font" type="system" pointSize="45"/>
+                                </label>
+                                <button width="1" alignment="center" verticalAlignment="bottom" title="Start" id="kAB-gx-Zjx">
+                                    <connections>
+                                        <action selector="buttonPressed" destination="VcM-hA-IYs" id="TXs-gk-Xsn"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="center" verticalAlignment="bottom" title="Start" id="QjZ-yU-eyZ">
+                                    <connections>
+                                        <action selector="buttonPressed" destination="VcM-hA-IYs" id="Vrd-At-K9R"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>
-                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
-                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <outlet property="countdownLabel" destination="l4v-MO-Y1N" id="adD-m1-Pz4"/>
+                        <outlet property="startBtnPressed" destination="QjZ-yU-eyZ" id="GLL-Fi-T6I"/>
+                        <outlet property="startButton" destination="kAB-gx-Zjx" id="iXT-Zb-Aa2"/>
                     </connections>
-                </notificationController>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
-        </scene>
-        <!--Notification Controller-->
-        <scene sceneID="ZPc-GJ-vnh">
-            <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
-            </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="301" y="328"/>
         </scene>
     </scenes>
 </document>

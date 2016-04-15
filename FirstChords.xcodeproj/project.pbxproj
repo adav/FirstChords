@@ -18,10 +18,10 @@
 		ACE157671CC0ECA900D2A4DB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACE157651CC0ECA900D2A4DB /* Interface.storyboard */; };
 		ACE157691CC0ECA900D2A4DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE157681CC0ECA900D2A4DB /* Assets.xcassets */; };
 		ACE157701CC0ECA900D2A4DB /* FirstChords WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACE1576F1CC0ECA900D2A4DB /* FirstChords WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		ACE157771CC0ECAA00D2A4DB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE157761CC0ECAA00D2A4DB /* InterfaceController.swift */; };
 		ACE157791CC0ECAA00D2A4DB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE157781CC0ECAA00D2A4DB /* ExtensionDelegate.swift */; };
 		ACE1577B1CC0ECAA00D2A4DB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1577A1CC0ECAA00D2A4DB /* NotificationController.swift */; };
 		ACE1577D1CC0ECAA00D2A4DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE1577C1CC0ECAA00D2A4DB /* Assets.xcassets */; };
+		ACE157931CC0F6FA00D2A4DB /* ChordsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE157921CC0F6FA00D2A4DB /* ChordsInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,11 +100,11 @@
 		ACE1576A1CC0ECA900D2A4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACE1576F1CC0ECA900D2A4DB /* FirstChords WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FirstChords WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE157751CC0ECAA00D2A4DB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		ACE157761CC0ECAA00D2A4DB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		ACE157781CC0ECAA00D2A4DB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		ACE1577A1CC0ECAA00D2A4DB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		ACE1577C1CC0ECAA00D2A4DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACE1577E1CC0ECAA00D2A4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE157921CC0F6FA00D2A4DB /* ChordsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordsInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,12 +207,12 @@
 		ACE157731CC0ECA900D2A4DB /* FirstChords WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				ACE157761CC0ECAA00D2A4DB /* InterfaceController.swift */,
 				ACE157781CC0ECAA00D2A4DB /* ExtensionDelegate.swift */,
 				ACE1577A1CC0ECAA00D2A4DB /* NotificationController.swift */,
 				ACE1577C1CC0ECAA00D2A4DB /* Assets.xcassets */,
 				ACE1577E1CC0ECAA00D2A4DB /* Info.plist */,
 				ACE157741CC0ECA900D2A4DB /* Supporting Files */,
+				ACE157921CC0F6FA00D2A4DB /* ChordsInterfaceController.swift */,
 			);
 			path = "FirstChords WatchKit Extension";
 			sourceTree = "<group>";
@@ -329,6 +329,7 @@
 				TargetAttributes = {
 					ACE157371CC0ECA900D2A4DB = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 3S7MLH8SZ2;
 					};
 					ACE1574B1CC0ECA900D2A4DB = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -442,9 +443,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE157931CC0F6FA00D2A4DB /* ChordsInterfaceController.swift in Sources */,
 				ACE1577B1CC0ECAA00D2A4DB /* NotificationController.swift in Sources */,
 				ACE157791CC0ECAA00D2A4DB /* ExtensionDelegate.swift in Sources */,
-				ACE157771CC0ECAA00D2A4DB /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,10 +649,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FirstChords/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.adav.FirstChords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -659,10 +664,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FirstChords/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.adav.FirstChords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -733,6 +742,7 @@
 				ACE157831CC0ECAA00D2A4DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACE157851CC0ECAA00D2A4DB /* Build configuration list for PBXNativeTarget "FirstChords WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -741,6 +751,7 @@
 				ACE157871CC0ECAA00D2A4DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACE157891CC0ECAA00D2A4DB /* Build configuration list for PBXNativeTarget "FirstChords" */ = {
 			isa = XCConfigurationList;
@@ -749,6 +760,7 @@
 				ACE1578B1CC0ECAA00D2A4DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACE1578C1CC0ECAA00D2A4DB /* Build configuration list for PBXNativeTarget "FirstChordsTests" */ = {
 			isa = XCConfigurationList;
@@ -757,6 +769,7 @@
 				ACE1578E1CC0ECAA00D2A4DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACE1578F1CC0ECAA00D2A4DB /* Build configuration list for PBXNativeTarget "FirstChordsUITests" */ = {
 			isa = XCConfigurationList;
@@ -765,6 +778,7 @@
 				ACE157911CC0ECAA00D2A4DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
