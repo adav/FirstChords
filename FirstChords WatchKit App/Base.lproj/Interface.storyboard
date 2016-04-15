@@ -10,19 +10,19 @@
             <objects>
                 <controller id="VcM-hA-IYs" customClass="ChordsInterfaceController" customModule="FirstChords_WatchKit_Extension">
                     <items>
-                        <group width="1" height="98.5" alignment="left" layout="vertical" id="0Sg-wf-HMm">
+                        <group width="1" height="149.5" alignment="left" layout="vertical" id="0Sg-wf-HMm">
                             <items>
                                 <label width="1" height="55.5" alignment="left" text="5" textAlignment="center" id="l4v-MO-Y1N">
                                     <fontDescription key="font" type="system" pointSize="45"/>
                                 </label>
-                                <button width="1" alignment="center" verticalAlignment="bottom" title="Start" id="kAB-gx-Zjx">
-                                    <connections>
-                                        <action selector="buttonPressed" destination="VcM-hA-IYs" id="TXs-gk-Xsn"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="center" verticalAlignment="bottom" title="Start" id="QjZ-yU-eyZ">
+                                <button width="1" height="39.5" alignment="center" title="Start Timer" id="QjZ-yU-eyZ">
                                     <connections>
                                         <action selector="buttonPressed" destination="VcM-hA-IYs" id="Vrd-At-K9R"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="Go Bowie!" id="txr-2Q-nW8">
+                                    <connections>
+                                        <segue destination="jeW-ze-uY3" kind="push" id="kpd-Gi-chQ"/>
                                     </connections>
                                 </button>
                             </items>
@@ -30,12 +30,26 @@
                     </items>
                     <connections>
                         <outlet property="countdownLabel" destination="l4v-MO-Y1N" id="adD-m1-Pz4"/>
-                        <outlet property="startBtnPressed" destination="QjZ-yU-eyZ" id="GLL-Fi-T6I"/>
-                        <outlet property="startButton" destination="kAB-gx-Zjx" id="iXT-Zb-Aa2"/>
+                        <outlet property="startButton" destination="QjZ-yU-eyZ" id="VNC-Xg-Nzq"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="301" y="328"/>
+            <point key="canvasLocation" x="301" y="327"/>
+        </scene>
+        <!--Bowie Interface Controller-->
+        <scene sceneID="afF-3Z-rxD">
+            <objects>
+                <controller id="jeW-ze-uY3" customClass="BowieInterfaceController" customModule="FirstChords_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Button" id="2CU-oX-qFh">
+                            <connections>
+                                <action selector="go" destination="jeW-ze-uY3" id="C0G-A2-53R"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="525" y="328"/>
         </scene>
     </scenes>
 </document>

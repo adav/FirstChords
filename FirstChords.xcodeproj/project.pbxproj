@@ -22,6 +22,19 @@
 		ACE1577B1CC0ECAA00D2A4DB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE1577A1CC0ECAA00D2A4DB /* NotificationController.swift */; };
 		ACE1577D1CC0ECAA00D2A4DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE1577C1CC0ECAA00D2A4DB /* Assets.xcassets */; };
 		ACE157931CC0F6FA00D2A4DB /* ChordsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE157921CC0F6FA00D2A4DB /* ChordsInterfaceController.swift */; };
+		ACEDA4B81CC1218900EAA79E /* timingsForBowie.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEDA4B61CC1218900EAA79E /* timingsForBowie.json */; };
+		ACEDA4B91CC1218900EAA79E /* timingsForBowie.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEDA4B61CC1218900EAA79E /* timingsForBowie.json */; };
+		ACEDA4BA1CC1218900EAA79E /* timingsForBowie.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEDA4B61CC1218900EAA79E /* timingsForBowie.json */; };
+		ACEDA4BB1CC1218900EAA79E /* timingsForBowie.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEDA4B61CC1218900EAA79E /* timingsForBowie.json */; };
+		ACEDA4BC1CC1218900EAA79E /* timingsForBowie.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEDA4B61CC1218900EAA79E /* timingsForBowie.json */; };
+		ACEDA4BD1CC1218900EAA79E /* chordsForBowie.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEDA4B71CC1218900EAA79E /* chordsForBowie.json */; };
+		ACEDA4BE1CC1218900EAA79E /* chordsForBowie.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEDA4B71CC1218900EAA79E /* chordsForBowie.json */; };
+		ACEDA4BF1CC1218900EAA79E /* chordsForBowie.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEDA4B71CC1218900EAA79E /* chordsForBowie.json */; };
+		ACEDA4C01CC1218900EAA79E /* chordsForBowie.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEDA4B71CC1218900EAA79E /* chordsForBowie.json */; };
+		ACEDA4C11CC1218900EAA79E /* chordsForBowie.json in Resources */ = {isa = PBXBuildFile; fileRef = ACEDA4B71CC1218900EAA79E /* chordsForBowie.json */; };
+		ACEDA4C31CC1240A00EAA79E /* BowieInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDA4C21CC1240A00EAA79E /* BowieInterfaceController.swift */; };
+		ACEDA4C51CC1253000EAA79E /* LinkedChordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDA4C41CC1253000EAA79E /* LinkedChordList.swift */; };
+		ACEDA4C81CC128E100EAA79E /* Chord.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEDA4C71CC128E100EAA79E /* Chord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +118,11 @@
 		ACE1577C1CC0ECAA00D2A4DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACE1577E1CC0ECAA00D2A4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACE157921CC0F6FA00D2A4DB /* ChordsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordsInterfaceController.swift; sourceTree = "<group>"; };
+		ACEDA4B61CC1218900EAA79E /* timingsForBowie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timingsForBowie.json; sourceTree = "<group>"; };
+		ACEDA4B71CC1218900EAA79E /* chordsForBowie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chordsForBowie.json; sourceTree = "<group>"; };
+		ACEDA4C21CC1240A00EAA79E /* BowieInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BowieInterfaceController.swift; sourceTree = "<group>"; };
+		ACEDA4C41CC1253000EAA79E /* LinkedChordList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedChordList.swift; sourceTree = "<group>"; };
+		ACEDA4C71CC128E100EAA79E /* Chord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,12 +160,15 @@
 		ACE1572F1CC0ECA900D2A4DB = {
 			isa = PBXGroup;
 			children = (
+				ACEDA4C61CC1253A00EAA79E /* LinkedChordList */,
 				ACE1573A1CC0ECA900D2A4DB /* FirstChords */,
 				ACE1574F1CC0ECA900D2A4DB /* FirstChordsTests */,
 				ACE1575A1CC0ECA900D2A4DB /* FirstChordsUITests */,
 				ACE157641CC0ECA900D2A4DB /* FirstChords WatchKit App */,
 				ACE157731CC0ECA900D2A4DB /* FirstChords WatchKit Extension */,
 				ACE157391CC0ECA900D2A4DB /* Products */,
+				ACEDA4B61CC1218900EAA79E /* timingsForBowie.json */,
+				ACEDA4B71CC1218900EAA79E /* chordsForBowie.json */,
 			);
 			sourceTree = "<group>";
 		};
@@ -213,6 +234,7 @@
 				ACE1577E1CC0ECAA00D2A4DB /* Info.plist */,
 				ACE157741CC0ECA900D2A4DB /* Supporting Files */,
 				ACE157921CC0F6FA00D2A4DB /* ChordsInterfaceController.swift */,
+				ACEDA4C21CC1240A00EAA79E /* BowieInterfaceController.swift */,
 			);
 			path = "FirstChords WatchKit Extension";
 			sourceTree = "<group>";
@@ -223,6 +245,15 @@
 				ACE157751CC0ECAA00D2A4DB /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACEDA4C61CC1253A00EAA79E /* LinkedChordList */ = {
+			isa = PBXGroup;
+			children = (
+				ACEDA4C41CC1253000EAA79E /* LinkedChordList.swift */,
+				ACEDA4C71CC128E100EAA79E /* Chord.swift */,
+			);
+			name = LinkedChordList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,6 +405,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEDA4BD1CC1218900EAA79E /* chordsForBowie.json in Resources */,
+				ACEDA4B81CC1218900EAA79E /* timingsForBowie.json in Resources */,
 				ACE157461CC0ECA900D2A4DB /* LaunchScreen.storyboard in Resources */,
 				ACE157431CC0ECA900D2A4DB /* Assets.xcassets in Resources */,
 				ACE157411CC0ECA900D2A4DB /* Main.storyboard in Resources */,
@@ -384,6 +417,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEDA4B91CC1218900EAA79E /* timingsForBowie.json in Resources */,
+				ACEDA4BE1CC1218900EAA79E /* chordsForBowie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +426,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEDA4BA1CC1218900EAA79E /* timingsForBowie.json in Resources */,
+				ACEDA4BF1CC1218900EAA79E /* chordsForBowie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +437,8 @@
 			files = (
 				ACE157691CC0ECA900D2A4DB /* Assets.xcassets in Resources */,
 				ACE157671CC0ECA900D2A4DB /* Interface.storyboard in Resources */,
+				ACEDA4BB1CC1218900EAA79E /* timingsForBowie.json in Resources */,
+				ACEDA4C01CC1218900EAA79E /* chordsForBowie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +446,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEDA4BC1CC1218900EAA79E /* timingsForBowie.json in Resources */,
+				ACEDA4C11CC1218900EAA79E /* chordsForBowie.json in Resources */,
 				ACE1577D1CC0ECAA00D2A4DB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,8 +484,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACEDA4C81CC128E100EAA79E /* Chord.swift in Sources */,
+				ACEDA4C31CC1240A00EAA79E /* BowieInterfaceController.swift in Sources */,
 				ACE157931CC0F6FA00D2A4DB /* ChordsInterfaceController.swift in Sources */,
 				ACE1577B1CC0ECAA00D2A4DB /* NotificationController.swift in Sources */,
+				ACEDA4C51CC1253000EAA79E /* LinkedChordList.swift in Sources */,
 				ACE157791CC0ECAA00D2A4DB /* ExtensionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

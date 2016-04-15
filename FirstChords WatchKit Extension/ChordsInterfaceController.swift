@@ -46,7 +46,7 @@ class ChordsInterfaceController: WKInterfaceController {
     func resetTimer() {
         timer.invalidate()
         countdown = 5
-        startButton.setTitle("Start")
+        startButton.setTitle("Start Timer")
         
     }
     
